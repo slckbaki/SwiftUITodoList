@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		82CBC186A9A605AF28536FA6 /* Pods_TodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039857BE424269974AEA7722 /* Pods_TodoList.framework */; };
+		A14AB4ED27AF3ED20021D30E /* PatientDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AB4EC27AF3ED10021D30E /* PatientDetailsView.swift */; };
 		A1DB4C1127A012E300FB12D4 /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DB4C1027A012E300FB12D4 /* TodoListApp.swift */; };
 		A1DB4C1327A012E300FB12D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DB4C1227A012E300FB12D4 /* ContentView.swift */; };
 		A1DB4C1527A012ED00FB12D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DB4C1427A012ED00FB12D4 /* Assets.xcassets */; };
 		A1DB4C1827A012ED00FB12D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1DB4C1727A012ED00FB12D4 /* Preview Assets.xcassets */; };
 		A1DB4C1F27A014EB00FB12D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1DB4C1E27A014EB00FB12D4 /* GoogleService-Info.plist */; };
+		A1DB4C2227A029D100FB12D4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DB4C2127A029D100FB12D4 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		039857BE424269974AEA7722 /* Pods_TodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CDF7E928641EB27E58F1DF /* Pods-TodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoList.release.xcconfig"; path = "Target Support Files/Pods-TodoList/Pods-TodoList.release.xcconfig"; sourceTree = "<group>"; };
+		A14AB4EC27AF3ED10021D30E /* PatientDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDetailsView.swift; sourceTree = "<group>"; };
 		A1DB4C0D27A012E300FB12D4 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DB4C1027A012E300FB12D4 /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		A1DB4C1227A012E300FB12D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1DB4C1427A012ED00FB12D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1DB4C1727A012ED00FB12D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1DB4C1E27A014EB00FB12D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A1DB4C2127A029D100FB12D4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		D1BEC254F351FDCB88171F69 /* Pods-TodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoList.debug.xcconfig"; path = "Target Support Files/Pods-TodoList/Pods-TodoList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +49,6 @@
 				D1BEC254F351FDCB88171F69 /* Pods-TodoList.debug.xcconfig */,
 				57CDF7E928641EB27E58F1DF /* Pods-TodoList.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -60,6 +63,7 @@
 		A1DB4C0427A012E300FB12D4 = {
 			isa = PBXGroup;
 			children = (
+				A1DB4C2027A029B500FB12D4 /* Models */,
 				A1DB4C0F27A012E300FB12D4 /* TodoList */,
 				A1DB4C0E27A012E300FB12D4 /* Products */,
 				3D12F0829FBB20E06944D284 /* Pods */,
@@ -80,6 +84,7 @@
 			children = (
 				A1DB4C1027A012E300FB12D4 /* TodoListApp.swift */,
 				A1DB4C1227A012E300FB12D4 /* ContentView.swift */,
+				A14AB4EC27AF3ED10021D30E /* PatientDetailsView.swift */,
 				A1DB4C1E27A014EB00FB12D4 /* GoogleService-Info.plist */,
 				A1DB4C1427A012ED00FB12D4 /* Assets.xcassets */,
 				A1DB4C1627A012ED00FB12D4 /* Preview Content */,
@@ -93,6 +98,14 @@
 				A1DB4C1727A012ED00FB12D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1DB4C2027A029B500FB12D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1DB4C2127A029D100FB12D4 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1DB4C1327A012E300FB12D4 /* ContentView.swift in Sources */,
+				A14AB4ED27AF3ED20021D30E /* PatientDetailsView.swift in Sources */,
+				A1DB4C2227A029D100FB12D4 /* Task.swift in Sources */,
 				A1DB4C1127A012E300FB12D4 /* TodoListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
